@@ -21,8 +21,8 @@ def fidning_errors(lst: list)-> dict:
     my_dict = {}
 
     my_input_cp = lst
-    for i in range(len(my_input_cp)):
-        split_string = my_input_cp[i].split(",")
+    for i in my_input_cp:
+        split_string = i.split(",")
     
         error_type = split_string[1]
         my_dict[error_type] = my_dict.get(error_type, 0) +1
